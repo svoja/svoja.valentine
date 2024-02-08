@@ -1,0 +1,156 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 200px;
+    height: auto; 
+}
+
+.cat1 {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+    margin-top: 15px; 
+}
+
+.buttons button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #333; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.buttons button:hover {
+    background-color: #555;
+}
+
+.bigger {
+    font-size: 20px;
+    padding: 15px 25px;
+}
+
+/* Page 2 */
+
+.text2 {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Page 3 */
+
+.container {
+    background-color: #944E63;
+    max-width: 600px;
+    margin: 0 200;
+    margin-top: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.container {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    background-color: #B47B84;
+    border: 0px;
+    border-radius: 20px
+}
+
+p {
+    font-weight: bold;
+}
+
+.checkbox {
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Make it a circle */
+    border: 2px solid #555; /* Border color */
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.checkbox input[type="checkbox"]:checked {
+    background-color: #86A7FC; /*เติมสี*/
+}
+
+#confirmbutton {
+    text-align: center;
+    margin-bottom: 350px;
+}
+
+.transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+}
+
+.fade-out {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Page 3 */
+
+.congratulations {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    animation: grow 2s forwards;
+}
+
+@keyframes grow {
+    0% { font-size: 0; opacity: 0; visibility: hidden; }
+    100% { font-size: 2rem; opacity: 1; visibility: visible; }
+}
+
+h1 {
+    color: white;
+}
